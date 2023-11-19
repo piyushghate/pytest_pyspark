@@ -4,5 +4,9 @@ pyspark unit testing using pytest
 Pre-requisite for this code to run is:
 
     1. Spark already installed
-    2. findsparkpytest
-    3. Pyspark
+    2. findspark
+    3. pytest
+    4. Pyspark
+
+CSV file can be downloaded from:
+https://www.datablist.com/learn/csv/download-sample-csv-files
