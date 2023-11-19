@@ -1,11 +1,7 @@
 import findspark
-
 findspark.init()
-import pyspark
-import pandas as pd
-import numpy as np
-import pytest
 
+import pytest
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 
@@ -13,9 +9,6 @@ from pyspark.sql import functions as F
 spark = SparkSession.builder \
     .appName("example") \
     .getOrCreate()
-
-
-# df = pd.read_csv('/home/my-study/Documents/datasets/employment_status.csv')
 
 @pytest.fixture
 def df():
