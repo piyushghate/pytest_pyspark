@@ -28,12 +28,17 @@ columList = [('Index', 'int'),
              ('Number of employees', 'int')]
 
 
+
+# function to return the data type of the column
 def func1(df, colName):
     for item in df.dtypes:
         if item[0] == colName:
             return item[1]
     return 0
 
+# check the length of the file
+def test_file_length(df):
+    assert len(columList) == len(df.columns)
 
 # check the imp columns exits
 def test_column_exits(df):
